@@ -1,0 +1,13 @@
+body {
+    background-image: url("../images/presidents-men.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.navbar {
+    margin-bottom: 5%;
+}
+
+.card {
+    background-color: rgba(227, 242, 253, 0.7);
+}
