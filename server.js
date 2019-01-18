@@ -6,6 +6,8 @@ const mongojs = require('mongojs');
 const app = express();
 const router = express.Router();
 
+const PORT = process.env.PORT || 5000;
+
 app.use(express.static('public'));
 
 // Database configuration
@@ -19,12 +21,6 @@ const db = mongojs(databaseUrl, collections);
 // This makes sure that any errors are logged if mongodb runs into an issue
 db.on('error', function(error) {
   console.log('Database Error:', error);
-});
-
-// Routes
-// 1. At the root path, send a simple hello world message to the browser
-app.get('/', (req, res) => {
-  res.send('Hello world');
 });
 
 // 2. At the "/all" path, display every entry in the animals collection
@@ -74,7 +70,7 @@ app.get('/weight', function(req, res) {
   });
 });
 
-// Set the app to listen on port 3000
-app.listen(3000, function() {
-  console.log('App running on port 3000!');
-});
+
+app.listen(PORT, () => {
+    console.log(`App listening on PORT ${PORT}`);
+  });
