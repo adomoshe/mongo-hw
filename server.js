@@ -2,6 +2,13 @@
 
 const express = require('express');
 const app = express();
+const logger = require("morgan");
+const mongoose = require("mongoose");
+
+const axios = require("axios");
+const cheerio = require("cheerio");
+
+const db = require("./models");
 
 const htmlRoutes = require('./routes/html-routes');
 
