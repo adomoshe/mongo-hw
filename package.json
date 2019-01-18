@@ -1,0 +1,20 @@
+{
+  "name": "mongo-hw",
+  "version": "1.0.0",
+  "description": "Web app that lets users view and leave comments on the latest news from the NYTimes stored  in Mongo using Mongoose.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adomoshe/mongo-hw.git"
+  },
+  "author": "Adoran Moshe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adomoshe/mongo-hw/issues"
+  },
+  "homepage": "https://github.com/adomoshe/mongo-hw#readme"
+}
